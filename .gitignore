@@ -1,0 +1,24 @@
+# Compiled files
+/target/
+
+# Rust files that have been compiled to bytecode
+**/*.rmeta
+
+# Rustfmt configuration file
+**/*.rs.bk
+
+# Rust package files
+**/*.rlib
+**/*.rmeta
+
+# Cargo cache files
+/.cargo/
+
+# Cargo log files
+Cargo.lock
+
+# rustup cache files
+/rustup/
+
+# rustfmt cache files
+/rustfmt/
