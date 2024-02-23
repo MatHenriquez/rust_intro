@@ -1,5 +1,5 @@
 # Compiled files
-/target/
+*/target/
 
 # Rust files that have been compiled to bytecode
 **/*.rmeta
@@ -12,13 +12,13 @@
 **/*.rmeta
 
 # Cargo cache files
-/.cargo/
+*/.cargo/
 
 # Cargo log files
 Cargo.lock
 
 # rustup cache files
-/rustup/
+*/rustup/
 
 # rustfmt cache files
-/rustfmt/
+*/rustfmt/
