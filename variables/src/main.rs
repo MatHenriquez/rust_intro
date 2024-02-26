@@ -6,4 +6,6 @@ fn main() {
     let sum = first_number + second_number;
 
     println!("The value of sum is: {}", sum);
+
+    println!("The sum is: {} + {} = {}", first_number, second_number, sum);
 }
