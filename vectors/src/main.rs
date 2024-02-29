@@ -27,4 +27,8 @@ fn main() {
     let last_number = vector.pop().unwrap(); // Removing last element and unwrapping the result
     println!("Number popped: {}", last_number);
     println!("New vector is: {:?}", vector);
+
+    let mut vector = Vec::new(); // Creating empty vector
+    vector.push(1); // The compiler will infer the type of vector as i32
+    println!("Vector: {:?}", vector);
 }
