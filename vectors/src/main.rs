@@ -29,6 +29,6 @@ fn main() {
     println!("New vector is: {:?}", vector);
 
     let mut vector = Vec::new(); // Creating empty vector
-    vector.push(1); // The compiler will infer the type of vector as i32
+    vector.push(1); // The compiler will infer the type of vector as Vec<i32>
     println!("Vector: {:?}", vector);
 }
