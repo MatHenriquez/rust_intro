@@ -20,4 +20,7 @@ fn main() {
 
     let first_element = vector.remove(0); // Removing element by index
     println!("Vector: {:?}, First element: {}", vector, first_element);
+
+    vector.insert(0, -1); // Inserting element with value: -1 at index 0 
+    println!("Vector: {:?}", vector);
 }
