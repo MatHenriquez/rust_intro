@@ -23,4 +23,8 @@ fn main() {
 
     vector.insert(0, -1); // Inserting element with value: -1 at index 0 
     println!("Vector: {:?}", vector);
+
+    let last_number = vector.pop().unwrap(); // Removing last element and unwrapping the result
+    println!("Number popped: {}", last_number);
+    println!("New vector is: {:?}", vector);
 }
