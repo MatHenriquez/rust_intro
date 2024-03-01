@@ -7,6 +7,17 @@ fn main() {
         println!("{}", message_inner);
         println!("{} (from inner block)", message_main); // Scope: message_main is accessible from inner block but not vice versa
     }
+
+    let returned_value = {
+        println!("Hello from another block!");
+
+        let variable: i32 = 200;
+        println!("The value of variable is: {}", variable);
+
+        variable // The value of variable is returned from the block.
+    };
+
+    println!("The value of returned_value is: {}", returned_value);
 } // When the block ends, the variable is destroyed
 
 // Note: shadowing respect the scope of the variable. It does not affect the variable outside the block.
