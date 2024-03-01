@@ -6,7 +6,7 @@ fn main() {
     let mut color = String::new();
     println!("Enter the color: ");
     io::stdin().read_line(&mut color);
-    let color = color.trim();
+    let color = color.trim().to_lowercase();
 
     if color == "green" {
         println!("Go ahead");
