@@ -16,4 +16,8 @@ fn main() {
     for number in numbers.iter() {
         println!("Number[i] is: {}", number);
     }
+
+    for number in (1..4) {
+        println!("Number[i] is: {}", number);
+    }
 }
