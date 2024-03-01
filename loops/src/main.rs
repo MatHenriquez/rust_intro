@@ -4,10 +4,16 @@ fn main() {
 
     loop {
         count += 1;
-        println!("{}", count);
+        println!("Count is: {}", count);
 
         if count == 5 {
             break;
         }
+    }
+
+    let numbers: [i32; 5] = [1, 2, 3, 4, 5];
+
+    for number in numbers.iter() {
+        println!("Number[i] is: {}", number);
     }
 }
