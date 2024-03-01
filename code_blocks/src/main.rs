@@ -18,6 +18,26 @@ fn main() {
     };
 
     println!("The value of returned_value is: {}", returned_value);
+
+    let calification: i8 = 10;
+    let mut message = String::new();
+
+    if calification > 7 {
+        message = String::from("You passed the exam!");
+        println!("{}", message);
+    } else {
+        message = String::from("You failed the exam!");
+        println!("{}", message);
+    }
+
+    // More concise way
+    let message = if calification > 7 {
+        String::from("You passed the exam!")
+    } else {
+        String::from("You failed the exam!")
+    };
+
+    println!("{}", message);
 } // When the block ends, the variable is destroyed
 
 // Note: shadowing respect the scope of the variable. It does not affect the variable outside the block.
