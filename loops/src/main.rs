@@ -20,4 +20,10 @@ fn main() {
     for number in (1..4) {
         println!("Number[i] is: {}", number);
     }
+
+    let mut count = 10;
+    while count != 0 {
+        println!("Count is: {}", count);
+        count -= 1;
+    }
 }
