@@ -25,7 +25,7 @@ fn main() {
     let username = String::from("user3");
     let password = String::from("password3");
     let user3 = User { // struct instance with variables
-        username,
+        username, // field init shorthand syntax 
         password,
     };
     println!("Username: {}", user3.username);
