@@ -10,4 +10,11 @@ fn main() {
     };
     println!("Username: {}", user.username);
     println!("Password: {}", user.password);
+
+    let user2 = User {
+        username: String::from("user2"),
+        ..user // struct update syntax
+    };
+    println!("Username: {}", user2.username);
+    println!("Password: {}", user2.password);
 }
