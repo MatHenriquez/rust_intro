@@ -17,4 +17,13 @@ fn main() {
     };
     println!("Username: {}", user2.username);
     println!("Password: {}", user2.password);
+
+    let username = String::from("user3");
+    let password = String::from("password3");
+    let user3 = User { // struct instance with variables
+        username,
+        password,
+    };
+    println!("Username: {}", user3.username);
+    println!("Password: {}", user3.password);
 }
