@@ -3,6 +3,10 @@ struct User { // struct definition
     password: String,
 }
 
+fn create_user(username: String, password: String) -> User { // function that returns a User
+    User { username, password }
+}
+
 fn main() {
     let user = User { // struct instance
         username: String::from("user"),
@@ -26,4 +30,8 @@ fn main() {
     };
     println!("Username: {}", user3.username);
     println!("Password: {}", user3.password);
+
+    let user4 = create_user(String::from("user4"), String::from("password4")); // struct instance from function
+    println!("Username: {}", user4.username);
+    println!("Password: {}", user4.password);
 }
