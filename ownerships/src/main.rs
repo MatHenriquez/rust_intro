@@ -29,5 +29,6 @@ fn main() {
     // rectangle1Mut.width = 60;
     // println!("The area of the rectangle is {} square pixels.", area(&rectangle1Mut));
 
-    
+    let new_rectangle = rectangle1; // This is a move operation, the ownership of rectangle1 is moved to new_rectangle
+    println!("The area of the rectangle is {} square pixels.", area(&new_rectangle));
 }
