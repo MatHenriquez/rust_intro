@@ -23,4 +23,11 @@ fn main() {
     let rectangle1Area = area(&rectangle1); // Borrowing a reference to a Rectangle instance
 
     println!("The area of the rectangle is {} square pixels.", rectangle1Area);
+
+    // The following code will not compile because the rectangle1 is borrowed as immutable and cannot be borrowed as mutable
+    // let rectangle1Mut = &mut rectangle1;
+    // rectangle1Mut.width = 60;
+    // println!("The area of the rectangle is {} square pixels.", area(&rectangle1Mut));
+
+    
 }
