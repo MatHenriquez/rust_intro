@@ -1,3 +1,26 @@
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn area(rectangle: &Rectangle) -> u32 { // Borrowing a reference to a Rectangle instance
+    rectangle.width * rectangle.height
+}
+
 fn main() {
     // Ownership is Rust’s most unique feature, and it enables Rust to make memory safety guarantees without needing a garbage collector.
+
+    // Ownership Rules:
+    // 1. Each value in Rust has a variable that’s called its owner.
+    // 2. There can only be one owner at a time.
+    // 3. When the owner goes out of scope, the value will be dropped.
+
+    let rectangle1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    let rectangle1Area = area(&rectangle1); // Borrowing a reference to a Rectangle instance
+
+    println!("The area of the rectangle is {} square pixels.", rectangle1Area);
 }
