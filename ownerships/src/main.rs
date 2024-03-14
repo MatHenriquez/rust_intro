@@ -34,4 +34,10 @@ fn main() {
 
     // The following code will not compile because the rectangle1 is moved to new_rectangle
     // println!("The area of the rectangle is {} square pixels.", area(&rectangle1));
+
+    // Stack and Heap
+    // Stack: All data on the stack must have a known, fixed size.
+    // Heap: Data with an unknown size at compile time or a size that might change must be stored on the heap instead.
+    // All data stored on the heap is managed through a pointer whose size is known and fixed, but the data to which the pointer refers is not of a known size.
+    // In ownerships, the data on the heap is managed through smart pointers.
 }
