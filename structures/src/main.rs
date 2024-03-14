@@ -34,4 +34,13 @@ fn main() {
     let user4 = create_user(String::from("user4"), String::from("password4")); // struct instance from function
     println!("Username: {}", user4.username);
     println!("Password: {}", user4.password);
+
+    let mut user5 = User { // mutable struct instance
+        username: String::from("user5"),
+        password: String::from("password5"),
+    };
+    user5.username = String::from("user5");
+    user5.password = String::from("password");
+    println!("Username: {}", user5.username);
+    println!("Password: {}", user5.password);
 }
