@@ -20,4 +20,7 @@ fn main() {
     };
 
     user1.say_hi();
+    user1.change_password(String::from("password2"));
+
+    println!("The new password is {}", user1.password);
 }
