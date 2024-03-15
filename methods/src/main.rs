@@ -4,5 +4,8 @@ struct User {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let mut user1 = User {
+        username: String::from("user1"),
+        password: String::from("password1"),
+    };
 }
