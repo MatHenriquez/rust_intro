@@ -4,7 +4,7 @@ struct User {
 }
 
 impl User {
-    fn sayHi(&mut self) {
+    fn say_hi(&mut self) {
         println!("Hi, I'm {}", self.username);
     }
 }
