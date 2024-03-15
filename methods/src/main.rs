@@ -14,4 +14,6 @@ fn main() {
         username: String::from("user1"),
         password: String::from("password1"),
     };
+
+    user1.say_hi();
 }
