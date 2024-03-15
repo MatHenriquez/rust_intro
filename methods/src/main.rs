@@ -7,6 +7,10 @@ impl User {
     fn say_hi(&mut self) {
         println!("Hi, I'm {}", self.username);
     }
+
+    fn change_password(&mut self, new_password: String) {
+        self.password = new_password;
+    }
 }
 
 fn main() {
