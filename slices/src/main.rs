@@ -5,4 +5,10 @@ fn main() {
 
     let message = String::from("Hello, world!");
     println!("message: {}", message);
+
+    let hello = &message[0..5]; // [start..end] -> start is inclusive, end is exclusive
+    let world = &message[7..12];
+
+    println!("hello: {}", hello);
+    println!("world: {}", world);
 }
