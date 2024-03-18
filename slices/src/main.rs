@@ -7,7 +7,7 @@ fn main() {
     println!("message: {}", message);
 
     let hello = &message[0..5]; // [start..end] -> start is inclusive, end is exclusive
-    let world = &message[7..12];
+    let world = &message[7..12]; // If end is the last index of the string, you can omit it
 
     println!("hello: {}", hello);
     println!("world: {}", world);
