@@ -1,3 +1,5 @@
 fn main() {
-    println!("Hello, world!");
+    // A slice is a reference to a contiguous sequence of elements in a collection. Are like references to arrays, but they don't have a fixed size.
+    // Slices -> Heap-allocated data structures
+    // Arrays -> Stack-allocated data structures
 }
