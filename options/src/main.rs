@@ -31,6 +31,9 @@ fn main() {
     let message = get_value(true).unwrap(); // This will return "Hello, world! From get_value!" because the function returns a value
     println!("{}", message); // This will print the message
 
+    let message = get_value(false).unwrap_or("Handled error...".to_string()); // This will return "Handled error..." because the function returns no value
+    println!("{}", message); // This will print the message
+
     let message = get_value(false).unwrap(); // This will panic because the function returns no value
     println!("{}", message); // This will not be executed
 }
