@@ -20,4 +20,10 @@ fn main() {
         Some(msg) => println!("{}", msg), // This will print the message
         None => println!("No message"), // This will not be executed
     }
+
+    let message = get_value(false); // This will return None because the function returns no value
+    match message {
+        Some(msg) => println!("{}", msg), // This will not be executed
+        None => println!("No message"), // This will print "No message"
+    }
 }
