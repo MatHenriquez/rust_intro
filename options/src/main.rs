@@ -3,8 +3,12 @@
 //     None, // None -> is a variant of Option
 // }
 
-fn get_value() -> Option<String> {
-    Some(String::from("Hello, world! From get_value!"))
+fn get_value(flag: bool) -> Option<String> {
+    if flag {
+        Some(String::from("Hello, world! From get_value!"))
+    } else {
+        None
+    }
 }
 
 fn main() {
