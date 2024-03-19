@@ -3,6 +3,10 @@
 //     None, // None -> is a variant of Option
 // }
 
+fn get_value() -> Option<String> {
+    Some(String::from("Hello, world! From get_value!"))
+}
+
 fn main() {
     // Option -> is an enum that can have two values: Some and None
     // Result -> is an enum that can have two values: Ok and Err
