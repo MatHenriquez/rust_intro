@@ -49,4 +49,6 @@ fn main() {
     // Result methods: unwrap, unwrap_or, expect
 
     // let result = divide(2.0, 0.0).unwrap(); // panic! with "Cannot divide by zero"
+    let result = divide(2.0, 0.0).unwrap_or(0.0); // 0.0
+    let result = divide(2.0, -2.0).expect("Cannot divide by negative"); // panic! with "Cannot divide by zero"
 }
