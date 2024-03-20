@@ -11,6 +11,7 @@ fn get_value(flag: bool) -> Option<String> {
     }
 }
 
+#[derive(Debug)] // This is a derive attribute that allows us to print the struct
 struct User {
     username: String,
     email: String,
@@ -41,18 +42,20 @@ fn main() {
     let message = get_value(false).unwrap_or("Handled error...".to_string()); // This will return "Handled error..." because the function returns no value
     println!("{}", message); // This will print the message
 
-    let message = get_value(false).expect("This is an error message..."); // This will panic because the function returns no value
+    // let message = get_value(false).expect("This is an error message..."); // This will panic because the function returns no value
     println!("{}", message); // This will not be executed
 
-    let message = get_value(false).unwrap(); // This will panic because the function returns no value
+    // let message = get_value(false).unwrap(); // This will panic because the function returns no value
     println!("{}", message); // This will not be executed
 
     let user1 = User {
         username: String::from("Matt"),
-        email: String::from("Damon"),
+        email: String::from("damon@matt.com"),
         password: String::from("123456"),
         age: Some(30),
     };
+    println!("{:?}", user1); // This will print the struct
 
-    
+    let edad = user1.age.unwrap(); // This will return 30 because the age is Some(30)
+    println!("Age is {}", edad); // This will print the age
 }
