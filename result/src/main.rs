@@ -45,4 +45,8 @@ fn main() {
             ErrorDivide::DivideByNegative => println!("Cannot divide by negative"),
         },
     }
+
+    // Result methods: unwrap, unwrap_or, expect
+
+    // let result = divide(2.0, 0.0).unwrap(); // panic! with "Cannot divide by zero"
 }
