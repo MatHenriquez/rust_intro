@@ -46,4 +46,13 @@ fn main() {
 
     let message = get_value(false).unwrap(); // This will panic because the function returns no value
     println!("{}", message); // This will not be executed
+
+    let user1 = User {
+        username: String::from("Matt"),
+        email: String::from("Damon"),
+        password: String::from("123456"),
+        age: Some(30),
+    };
+
+    
 }
