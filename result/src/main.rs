@@ -12,5 +12,9 @@ fn divide(x: f64, y: f64) -> Result<f64, String> {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let result = divide(2.0, 0.0);
+    println!("{:?}", result); // Err("Cannot divide by zero")
+
+    let result = divide(6.0, 3.0);
+    println!("{:?}", result); // Ok(2.0)
 }
